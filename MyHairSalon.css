@@ -399,4 +399,6 @@ input,select{
     .bookbutton{
         padding: 10px;
     }
+    header{
+        padding:15px;
 }
