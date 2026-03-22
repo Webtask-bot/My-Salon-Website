@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth; 
+    scroll-padding-top: 100px; 
+}
+header{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   background-color: rgba(0,0,0,0.7);
+   color:  rgb(255, 179, 0);;
+   padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;        
+    z-index: 1000;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+ 
+    justify-content:space-around;
+    gap: 80px;
+    margin-left: auto;
+       margin-right: 30px;
+
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color:   rgb(255, 179, 0);;
+    padding: 10px;
+    color:black;
+    border-radius: 5px;
+}
+nav a:hover{
+       transition: 0.3s ease;
+       background-color: black;
+       color:gold;
+       border-radius: 15px;
+}
+.first-section{
+    height: 100vh;
+  background-image: url("LaddiesSalonBackground.avif");
+  background-size: cover;        /* पूरी screen cover करेगा */
+  background-repeat: no-repeat;  /* repeat नहीं होगा */
+  background-position: center;   /* center में रहेगा */
+  display: flex;
+ padding-top: 150px;
+  justify-content: flex-start;
+  padding-left: 50px;
+ 
+    animation: slideRight 1.5s ease forwards;
+}
+.inner-box {
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 250px;
+  background-color: rgba(0,0,0,0.7);
+  margin-top : 20px;
+ padding: 50px;
+ border-radius: 20px;
+ gap: 20px;
+ margin-left: 50px;
+ animation: slideUp 2s  ease 0.3s forwards;
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.inner-box h1{
+    color: rgb(255, 179, 0);;
+    margin-bottom: 10px;
+
+   
+}
+.inner-box p{
+    color: rgb(255, 255, 255);
+}
+.button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 179, 0);;
+ padding: 9px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+
+   
+    
+}
+.AboutSection{
+    background-color:#3b2f2a;
+    color: rgb(255, 255, 255);
+}
+
+.about{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 120px;
+
+}
+.image{
+    width: 100%;
+    border-radius: 50px;
+  max-width: 480px;
+    
+}
+.aboutme{
+  width: 100%;
+  max-width: 500px;
+ align-items: center;
+
+}
+.aboutme h4{
+    line-height: 1.6;
+}
+.Services{
+background-color:rgb(61,61,61);
+text-align: center;
+    padding: 50px 20px;
+
+}
+.Boxes{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.box{
+    background-color: rgb(0, 0, 0);
+   padding: 40px;
+   border-radius: 15px;
+   color: rgb(255, 255, 255);
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.box h2{
+    color: rgb(255, 179, 0);;
+}
+.box p{
+    color: white;
+}
+.box:hover{
+    transform: translateY(-10px);
+   background:  rgb(255, 179, 0);;
+}
+.Services h1{
+    margin-bottom: 40px;
+     font-size: 40px;
+     color:  rgb(255, 179, 0);;
+
+}
+.box:hover h2{
+    color: black;
+}
+.box:hover p{
+    color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+   
+   
+}
+input,select{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+   
+
+}
+.BookingBox{
+    width: 100%;
+    max-width: 600px;
+    background-color:rgb(31, 31, 31);
+    padding: 30px;
+    text-align: center;
+    border: 3px solid rgb(255, 179, 0);;
+    color:  rgb(255, 179, 0);;
+    border-radius: 10px;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    background-color: #E6DDC4;
+    padding: 100px;
+}
+.bookbutton{
+    padding: 15px;
+    font-weight: 700;
+    background-color: rgb(255, 179, 0);;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bookbutton:hover{
+    background-color: #E6DDC4;
+    color: rgb(0, 0, 0);
+    border:1px solid gold;
+    border-radius: 15px;
+}
+.container2{
+    width: 100%;
+   max-width: 1100px;
+   margin:auto
+
+
+}.Contact-Section{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+   
+}
+.Box1{
+    width: 100%;
+    max-width: 400px;
+ 
+}
+.Box2{
+    width: 100%;
+    max-width: 400px;
+}
+.Box3{
+    width: 100%;
+    max-width: 400px;
+   
+}
+.icon{
+  background-color: rgb(177, 177, 177);
+  padding: 5px;
+  align-items: center;
+  margin-right: 20px;
+  height: 100%;
+  border-radius: 8px;
+}
+.item{
+    border-bottom: 2px solid rgb(237, 237, 237);
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    display: flex;
+}
+.numberlink{
+    text-decoration: none;
+}
+.box1h3{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.box1p{
+    margin-bottom: 100px;
+}
+.bookbutton2{
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(255, 179, 0);;
+    font-weight: 700;
+    color:black;
+    border-radius: 10px;
+
+}
+.bookbutton2:hover{
+    background-color: black;
+    color: gold;
+}
+/* Ye ek comment hai */
+
+.footer {
+    background:  rgba(0,0,0,0.7);
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-box h3 {
+    color:  rgb(255, 179, 0);;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+.percentage{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    padding-left: 0;
+}
+.percentage1{
+    color:   rgb(255, 179, 0);;
+}
+.percentage h4{
+    color: #ccc;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px){
+    header{
+        flex-direction: column;;
+        padding:15px;
+        text-align: center;
+    }
+    nav{
+        gap: 20px;
+        margin:0;
+        
+    }
+    .first-section{
+        padding-left: 20px;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .inner-box{
+        margin-left: 0;
+        padding: 20px;
+
+    }
+    .about{
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+
+    }
+    .percentage{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .Contact-Section{
+        flex-direction: column;
+        gap:40px;
+    padding: 50px 20px;
+    }
+    .container{
+        padding: 50px 20px;
+
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width:480px){
+    h1{
+        font-size: 24px;
+    }
+    .Services h1{
+        font-size: 28px;
+    }
+    .box{
+        padding: 25px;
+    }
+    .bookbutton{
+        padding: 10px;
+    }
+}
