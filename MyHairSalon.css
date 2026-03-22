@@ -54,7 +54,7 @@ nav a:hover{
 }
 .first-section{
     height: 100vh;
-  background-image: url("LaddiesSalonBackground.avif");
+  background-image: url("LaddiesSalonBackground.jpg");
   background-size: cover;        /* पूरी screen cover करेगा */
   background-repeat: no-repeat;  /* repeat नहीं होगा */
   background-position: center;   /* center में रहेगा */
