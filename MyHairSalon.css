@@ -61,7 +61,7 @@ nav a:hover{
 }
 .first-section{
     height: 100vh;
-  background-image: url("images/LaddiesSalonBackground.jpg");
+  background-image: url("LaddiesSalonBackground.jpg");
   background-size: cover;        /* पूरी screen cover करेगा */
   background-repeat: no-repeat;  /* repeat नहीं होगा */
   background-position: center;   /* center में रहेगा */
@@ -189,7 +189,7 @@ text-align: center;
    background:  rgb(255, 179, 0);;
 }
 .Services{
-      background-image: url("images/HairDresserBackground.png");
+      background-image: url("HairDresserBackground.png");
   background-size: cover;        /* पूरी screen cover करेगा */
   background-repeat: no-repeat;  /* repeat नहीं होगा */
   background-position: center;   /* center में रहेगा */
