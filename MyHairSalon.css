@@ -12,7 +12,7 @@ header{
    align-items: center;
    justify-content: center;
    gap: 20px;
-   background-color: rgba(0,0,0,0.7);
+   background-color:transparent;
    color:  rgb(255, 179, 0);;
    padding: 30px;
     position: fixed;
@@ -21,6 +21,14 @@ header{
     width: 100%;        
     z-index: 1000;
 }
+header.scrolled {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    color: black;
+    
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -40,21 +48,20 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color:   rgb(255, 179, 0);;
+    color:  rgb(255, 179, 0);;
     padding: 10px;
-    color:black;
     border-radius: 5px;
+    font-weight: 700;
 }
 nav a:hover{
-       transition: 0.3s ease;
-       background-color: black;
+       transition: 0.2s ease;
+       background-color: rgb(255, 255, 255);
        color:gold;
        border-radius: 15px;
 }
 .first-section{
     height: 100vh;
-  background-image: url("LaddiesSalonBackground.jpg");
+  background-image: url("images/LaddiesSalonBackground.jpg");
   background-size: cover;        /* पूरी screen cover करेगा */
   background-repeat: no-repeat;  /* repeat नहीं होगा */
   background-position: center;   /* center में रहेगा */
@@ -70,8 +77,9 @@ nav a:hover{
   max-width: 550px;
   height: 100%;
   max-height: 250px;
-  background-color: rgba(0,0,0,0.7);
-  margin-top : 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  margin-top : 150px;
  padding: 50px;
  border-radius: 20px;
  gap: 20px;
@@ -119,8 +127,8 @@ nav a:hover{
     
 }
 .AboutSection{
-    background-color:#3b2f2a;
-    color: rgb(255, 255, 255);
+    background-color:#ffffff;
+ color:  rgb(255, 179, 0);;
 }
 
 .about{
@@ -141,13 +149,17 @@ nav a:hover{
   width: 100%;
   max-width: 500px;
  align-items: center;
+ background-color: #F8F8F8;
 
+}
+.aboutme h1{
+    color:black;
 }
 .aboutme h4{
     line-height: 1.6;
 }
 .Services{
-background-color:rgb(61,61,61);
+background-color:rgb(255, 255, 255);
 text-align: center;
     padding: 50px 20px;
 
@@ -158,7 +170,8 @@ text-align: center;
     gap: 25px;
 }
 .box{
-    background-color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
    padding: 40px;
    border-radius: 15px;
    color: rgb(255, 255, 255);
@@ -174,6 +187,12 @@ text-align: center;
 .box:hover{
     transform: translateY(-10px);
    background:  rgb(255, 179, 0);;
+}
+.Services{
+      background-image: url("images/HairDresserBackground.png");
+  background-size: cover;        /* पूरी screen cover करेगा */
+  background-repeat: no-repeat;  /* repeat नहीं होगा */
+  background-position: center;   /* center में रहेगा */
 }
 .Services h1{
     margin-bottom: 40px;
@@ -210,7 +229,7 @@ input,select{
     background-color:rgb(31, 31, 31);
     padding: 30px;
     text-align: center;
-    border: 3px solid rgb(255, 179, 0);;
+    border: 3px solid rgb(255, 255, 255);;
     color:  rgb(255, 179, 0);;
     border-radius: 10px;
 }
@@ -400,5 +419,6 @@ input,select{
         padding: 10px;
     }
     header{
-        padding:15px;
+        padding: 15px;
+    }
 }
